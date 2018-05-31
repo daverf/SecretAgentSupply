@@ -1,0 +1,126 @@
+html {font-size: 18px;}
+
+body {font-family: helvetica;
+color: white;
+}
+
+/* Header */
+
+header { background-color: black;
+  height: 1.5rem;
+display: flex;
+justify-content: center;
+padding: 0.66rem 0 0.66rem 0;
+}
+
+.sitecontainer {width: 960px;}
+
+header .sitecontainer {display: flex;
+align-items: center;}
+
+#logo {height: 1.5rem; width: auto;
+margin-left: 0.5rem;
+margin-right: 1rem;}
+
+.logotag {font-size: 1rem; margin: 5rem 0 5rem 0;
+}
+
+/* Banner */
+
+.banner {background-image: url("../images/moto.jpeg");
+height: 25rem;
+background-size: cover;
+display: flex;
+justify-content: center;
+}
+
+.bannertext {width: 20rem;
+  background-color: black;
+  position: relative;
+top: 9rem;
+padding: 2rem 3rem 2rem 3rem;}
+
+.bannertext h2 {font-size: 1rem;
+font-weight: bold;
+margin-bottom: 0.25rem;}
+
+.bannertext h1 {font-size: 2rem;
+font-weight: bold;}
+
+/* Nav */
+
+.navbar {background-color: firebrick;
+display: flex;
+justify-content: center;}
+
+.navbar .sitecontainer {display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0.75rem 0 0.75rem 0;}
+
+/* Product Boxes */
+
+.mainproducts {display: flex;
+justify-content: center;}
+
+.mainproducts .sitecontainer {display: flex;
+justify-content: space-between;
+margin: 3rem 0 3rem 0;}
+
+.product {border: 4px black solid;
+width: 30%;
+display: flex;
+flex-direction: column;
+align-items: center;}
+
+.imgcontainer {height: 9rem;
+  max-width: 75%;
+margin: 2rem 0 2rem 0;
+display: flex;
+align-items: center;
+}
+
+.imgcontainer img {max-height: 100%; width: auto; max-width: 100%;}
+
+.product .name {width: 100%;
+  background-color: black;
+padding: 0.5rem 0 0.5rem 0;
+display: flex;
+justify-content: center;}
+
+/* Info Boxes */
+
+.info {display: flex; justify-content: center;}
+
+.infoheading {background-color: black; padding: 1rem 0 1rem 0;}
+
+.infoheading span {margin: 1rem 0 1rem 2rem;}
+.infocontent span {color: black;}
+
+.infobox {width: 35%;}
+
+.info .sitecontainer {display: flex; justify-content: space-between;
+margin-bottom: 4rem;}
+
+/* Footer */
+
+.footer {height: 5rem; background-color: black;
+display: flex; justify-content: center; align-items: center;}
+
+/* Tablet: Landcape Orientation Media Queries */
+
+@media only screen and (max-width: 1024px) { .product {min-width: 47%;}
+.infobox {width: 35%;} #glasses {display: none;} .infobox {width: 35%;}
+.navbutton {display: none;} #menubutton {display:inline;} .navbar .sitecontainer
+{justify-content: center;}}
+
+@media only screen and (min-width: 1025px) {#menubutton {display: none;}}
+
+/* Smartphone Media Query */
+
+@media only screen and (max-width: 470px) {.banner {max-height: 15rem;}.bannertext {top: 10rem;
+  padding: 1rem 0 1rem 2rem; width: 100%;}.bannertext h2 {font-size: 0.77rem}
+.bannertext h1 {font-size: 1rem;} #watch {display: none;} #pen {width: 90%;}
+.mainproducts .sitecontainer {justify-content: center;} .info .sitecontainer {display: flex;
+flex-direction: column; align-items: center;}
+.infobox {width: 90%;} #location {margin-bottom: 0.5rem;} .copyright {text-align: center;}}
